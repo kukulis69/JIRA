@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darzas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+             <a class="navbar-brand" href="#">
+                <!-- <i class="fas fa-film mr-2"></i> -->
+                Frutukas
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" onclick="filterSelection('all')">visi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" onclick="filterSelection('fruit')">vaisiai</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" onclick="filterSelection('veg')">daržovės</a>
+                </li>
+               
+            </ul>
+            </div> -->
+            <div id="myBtnContainer">
+                <button class="btn " data-filter = "all"> Show all</button>
+                <button class="btn " data-filter = "fruit"> vaisiai</button>
+                <button class="btn " data-filter = "veg"> daržovės</button>
+                </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/juosta.jpg">
+        <form class="d-flex tm-search-form">
+            <input id = "search" class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </div>
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4">
+            <h3 class="col-6 tm-text-primary">
+                Vaisiai ir daržovės
+            </h3>
+            
+        </div>
+        <div  class="row tm-mb-90 tm-gallery" id="store-products">
+        	<div  class="fruit col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 store-product">
+                    
+                    <img src="img/banana.jpg" alt="Image" class="img-fluid">
+                        <div class="product-details">
+                        <h3>Bananai</h3></div>
+                        <p>Šalių sąrašas kur auginama: Afrikoje, Azijoje, Islandijoje.</p>
+                        <p>Maistinės savybės: Kalio: 9% RPN; Vitamino B6: 33% RPN; Vitamino C: 11% RPN; Magnio: 8% RPN; Vario: 10% RPN; Mangano: 14% RPN; Angliavandenių: 24 gramai; Skaidulinės medžiagos: 3,1 gramo; Baltymų: 3 gramo; Riebalų: 4 gramo.
+                        </p>
+                        <p>Vidutinis svoris: 250gr.
+                        </p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="vaisi-detail.html">View more</a>
+                    
+                    
+                
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 veg store-product ">
+                >
+                    <img src="img/carrot.jpg" alt="Image" class="img-fluid">
+                    <div class="product-details">
+                        <h3>Morka</h3></div>
+                        <p>Šalių sąrašas kur auginama: Visame pasaulyje išskyrus Antarktida.</p>
+                        <p>Maistinės savybės: Morkoje yra vitamino C, D, E, B, kalcio, geležies, magnio ir daug
+                            karotino, kuris organizme virsta vitaminu A, šis vitaminas yra būtinas geram
+                            regėjimui palaikyti</p>
+                        <p>Vidutinis svoris: 75gr.</p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="info.html">View more</a>
+                        
+                   
+                
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 fruit store-product ">
+               
+                    <img src="img/watermelon.jpg" alt="Image" class="img-fluid">
+                    <div class="product-details">
+                        <h3>Arbuzas</h3></div>
+                        <p>Šalių sąrašas kur auginama: Labiau kur šilčiau, bet auga kai kurios veisles ir kur vesiau.</p>
+                        <p>Maistinės savybės:Didžiąją dalį, net 92 proc., arbūzo sudaro vanduo, tačiau neapsigaukite manydami, jog šis vaisius gali jus tik atgaivinti. Arbūzuose gausu maistingų medžiagų, vitaminų A, B6 ir C, likopeno, antioksidantų ir aminorūgščių, rašo Livescience.com. Be to, arbūzuose nėra riebalų, mažai natrio ir vos 40 kcal viename puodelyje.</p>
+                        <p>Vidutinis svoris: 6kg.</p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="info.html">View more</a>
+                        
+                    
+                
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 veg store-product ">
+               
+                    <img src="img/potato.jpg" alt="Image" class="img-fluid">
+                    <div class="product-details">
+                        <h3>Bulve</h3></div>
+                        <p>Šalių sąrašas kur auginama: Visame pasaulyje išskyrus Antarktida.</p>
+                        <p>Maistinės savybės:Šviežiose bulvėse yra vitaminų E, B, C ir D, taip pat – folio rūgšties.
+                            Bulvėse esantis kalis padeda iš organizmo pašalinti skysčių perteklių.
+                            Bulvių vartojimas gerina medžiagų apykaitą.
+                            Bulvės padeda sergant virškinamojo trakto ligomis (gastritu, dvylikapirštės žarnos opaligės, nuo padidėjusio rūgštingumo).</p>
+                        <p>Vidutinis svoris: 165gr.</p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="info.html">View more</a>
+                        
+                    
+                
+            </div>
+            
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 fruit store-product ">
+                <!--***-->
+                    <img src="img/pineapple.jpg" alt="Image" class="img-fluid">
+                    <div class="product-details">
+                        <h3>Ananasas</h3></div>
+                        <p>Šalių sąrašas kur auginama: Te kur šilta.</p>
+                        <p>Ananasus itin pravartu vartoti žmonėms, sergantiems širdies ir kraujagyslių ligomis. Juose esantis bromelainas skystina kraują ir neleidžia susiformuoti trombams, mažina kraujo spaudimą, taip pat padeda iš kraujagyslių pašalinti riebalų sankaupas bei kenksmingas medžiagas. Ypač patartina ananasus valgyti žmonėms, kenčiantiems nuo išeminės širdies ligos, taip pat miokardo infarkto ir insulto profilaktikai. O sergant širdies aritmija, maistui ananasus derėtų vartoti kasdien, ypač šiuo atveju praverčia jų sultys.</p>
+                        <p>Vidutinis svoris: 1.19kg.</p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="info.html">View more</a>
+                        
+                   
+                
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 veg store-product ">
+                <!--***-->
+                    <img src="img/garlic.jpg" alt="Image" class="img-fluid">
+                    <div class="product-details">
+                        <h3>Cesnakas</h3></div>
+                        <p>Šalių sąrašas kur auginama: Visame pasaulyje išskyrus Antarktida.</p>
+                        <p>Maistinės savybės:Česnakas gerina bendrą savijautą, širdies ir imuninę sistemą ir padeda išlaikyti sveiką kraujo cirkuliaciją. Veiklioji sudedamoji česnako dalis vadinama alicinu. Alicinas yra galingas natūralus antibiotikas, kuris slopina žalingų bakterijų gebėjimą augti ir daugintis mūsų organizme. Česnakas lėtina vėžinių ląstelių progresavimą. Taip pat jame yra sieros ir jos junginių, dėl ko česnakas gerina kvėpavimo sistemos veiklą ir valo toksinus. Mokslinių tyrimų metu buvo nustatyta, kad dėl alicino ir sieros junginių česnako papildai reguliuoja cholesterolio kiekį kraujyje bei gali padidinti gerojo cholesterolio kiekį kraujyje. Bet tai – dar ne visa šio augalo nauda mūsų kraujotakos sistemai, česnakas mažina trombocitų agregaciją (susijungimą, didėjimą), dėl to kraujas gali lengviau judėti ir taip yra palaikomas optimalus kraujo spaudimas.</p>
+                        <p>Vidutinis svoris: 99gr.</p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="info.html">View more</a>
+                    
+                
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 fruit store-product ">
+                <!--***-->
+                    <img src="img/apple.jpg" alt="Image" class="img-fluid">
+                    <div class="product-details">
+                        <h3>Obuolys</h3></div>
+                        <p>Šalių sąrašas kur auginama: Visame pasaulyje išskyrus Antarktida.</p>
+                        <p>Maistinės savybės:suvalgykite per dieną po 3–4 obuolius ir tokiu paprastu būdu sustiprinsite sveikatą, atitolinsite ligas ir senatvę.</p>
+                        <p>Vidutinis svoris: 129gr.</p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="info.html">View more</a>
+                   
+                
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 fruit store-product">
+                <!--***-->
+                    <img src="img/kiwi.jpg" alt="Image" class="img-fluid">
+                    <div class="product-details">
+                        <h3>Kiwi</h3></div>
+                        <p>Šalių sąrašas kur auginama:Te kur šilta.</p>
+                        <p>Maistinės savybės:Medikai pataria kasdien suvalgyti po 200 – 300 g įvairių vaisių, tačiau turint galvoje augančius susirgimus gripu, M. Maseris rekomenduoja atkreipti dėmesį į naudingąsias kivių savybes. Šie vaisiai turi daug vitaminų A, B ir C, taip pat daug mineralų. Iš pastarųjų ypač svarbūs magnis ir kalis, normalizuojantys medžiagų apykaitą ir valantys organizmą.</p>
+                        <p>Vidutinis svoris: 77gr.</p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="info.html">View more</a>
+                   
+                
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 veg store-product ">
+                <!--***-->
+                    <img src="img/onion.jpg" alt="Image" class="img-fluid">
+                    <div class="product-details">
+                        <h3>Svogunas</h3></div>
+                        <p>Šalių sąrašas kur auginama: Visame pasaulyje išskyrus Antarktida.</p>
+                        <p>Maistinės savybės: Senovės Egipte buvo tikima gydančiomis svogūno galiomis, dėl to šią daržovę naudojo apsisaugant nuo įvairių ligų ir net vaizduodavo paminkluose. Mūsų senoliai taip pat svogūnais gydė įvairius negalavimus, puoselėjo jų maistines savybes ir tikėjo, kad geriausia diena juos sodinti – gegužės 8-oji, prieš patekant saulei. Šiai daržovei nuo seno buvo skiriamas išskirtinis dėmesys, todėl „Iki“ maisto ekspertė Vilma Juodkazienė dalijasi įdomiausiomis ir naudingiausiomis svogūno savybėmis, į kurias verta atkreipti dėmesį ir šiandien.</p>
+                        <p>Vidutinis svoris: 175gr.</p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="info.html">View more</a>
+                   
+                
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 fruit store-product ">
+                <!--***-->
+                    <img src="img/orange.jpg" alt="Image" class="img-fluid">
+                    <div class="product-details">
+                        <h3>Apelsinas</h3></div>
+                        <p>Šalių sąrašas kur auginama: Visame pasaulyje išskyrus Antarktida.</p>
+                        <p>Maistinės savybės:Pirmiausia apelsinas naudingas tuo, kad palengvina vidurių užkietėjimo simptomus. Apelsinai, kaip ir kiti citrusiniai vaisiai, turi šarminį poveikį, stimuliuoja virškinimo sulčių išsiskyrimą į žarnyną ir mažina vidurių užkietėjimą. </p>
+                        <p>Vidutinis svoris: 175gr.</p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="info.html">View more</a>
+                  
+               
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 fruit store-product">
+                <!--***-->
+                    <img src="img/strawberry.jpg" alt="Image" class="img-fluid">
+                    <div class="product-details">
+                        <h3>Braske</h3></div>
+                        <p>Šalių sąrašas kur auginama: Visame pasaulyje išskyrus Antarktida.</p>
+                        <p>Maistinės savybės: Morkoje yra vitamino C, D, E, B, kalcio, geležies, magnio ir daug
+                            karotino, kuris organizme virsta vitaminu A, šis vitaminas yra būtinas geram
+                            regėjimui palaikyti</p>
+                        <p>Vidutinis svoris: 75gr.</p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="info.html">View more</a>
+                   
+                
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 fruit store-product ">
+                <!--***-->
+                    <img src="img/raspberry.jpg" alt="Image" class="img-fluid">
+                    <div class="product-details">
+                        <h3>Aviete</h3></div>
+                        <p>Šalių sąrašas kur auginama: Visame pasaulyje išskyrus Antarktida.</p>
+                        <p>Maistinės savybės: Morkoje yra vitamino C, D, E, B, kalcio, geležies, magnio ir daug
+                            karotino, kuris organizme virsta vitaminu A, šis vitaminas yra būtinas geram
+                            regėjimui palaikyti</p>
+                        <p>Vidutinis svoris: 75gr.</p>
+                        <p>Nauda sveikatai: naudinga ir sveika ;)</p>
+                        <a href="info.html">View more</a>
+                  
+               
+            </div>
+           
+        </div> <!-- row -->
+        
+    </div> <!-- container-fluid, tm-container-content -->
+
+    
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+
+ <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+   
+</body>
+</html>
